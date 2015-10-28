@@ -28,7 +28,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     [self setupSubviews];
     self.selectedIndex = 0;
 }
@@ -57,8 +56,6 @@
     _settingController = [[HJRSettingController alloc] init];
     _settingController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:[UIImage imageNamed:@"middle"] tag:4];
     UINavigationController *settingNvc = [[UINavigationController alloc] initWithRootViewController:_settingController];
-    
-    
     
     self.viewControllers = @[mainNvc,goingNvc,haveDoneNvc,settingNvc];
 }
