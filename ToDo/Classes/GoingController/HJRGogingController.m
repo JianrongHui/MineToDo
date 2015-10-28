@@ -18,7 +18,7 @@
     [super viewDidLoad];
    
     self.title = @"进行中";
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor greenColor];
     
 }
 
