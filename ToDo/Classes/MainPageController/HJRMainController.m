@@ -9,10 +9,14 @@
 #import "HJRMainController.h"
 #import "HJRMainPageCell.h"
 #import "HJRGogingController.h"
+#import "HJRDetailsController.h"
 
 static NSString *const mainPageCellId = @"mainPageCellId";
 
 @interface HJRMainController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    NSMutableArray *_dataArray;
+}
 
 @property (nonatomic, strong) UITableView *contentTableView;
 
@@ -24,6 +28,13 @@ static NSString *const mainPageCellId = @"mainPageCellId";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _dataArray = [NSMutableArray new];
+    
+    for (int i = 0; i < 5; i++) {
+        [_dataArray addObject:@""];
+    }
+    
     
     self.title = @"全部";
     self.view.backgroundColor = [UIColor whiteColor];
@@ -54,6 +65,12 @@ static NSString *const mainPageCellId = @"mainPageCellId";
     [self.view addSubview:_contentTableView];
 }
 
+#pragma mark - 点击事件
+- (void)rightBarButtonAction:(id)sender
+{
+    
+}
+
 #pragma mark - UITableViewDataSource | UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -66,8 +83,10 @@ static NSString *const mainPageCellId = @"mainPageCellId";
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    HJRGogingController *vc = [[HJRGogingController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    HJRDetailsController *vc = [[HJRDetailsController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+
+        [self.navigationController pushViewController:vc animated:YES];
     
 }
 

@@ -10,4 +10,7 @@
 
 @interface HJRBaseController : UIViewController
 
+- (void)backAction:(id)sender;
+- (void)rightBarButtonAction:(id)sender;
+
 @end

@@ -32,9 +32,10 @@
 - (void)setupLeftBarButtonItem{
     if (self.navigationController.viewControllers.count > 1) {
         UIButton *leftBtn = [UIButton buttonWithType:0];
-        [leftBtn setTitle:@"返回" forState:UIControlStateNormal];
+        [leftBtn setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+        leftBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 50);
         leftBtn.frame = CGRectMake(0, 0, 60, 64);
-        [leftBtn addTarget:self action:@selector(leftBarButtonItemAction:) forControlEvents:UIControlEventTouchUpInside];
+        [leftBtn addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     }
 }
@@ -50,7 +51,7 @@
 }
 
 #pragma mark - 点击事件 
-- (void)leftBarButtonItemAction:(UIButton *)sender
+- (void)backAction:(id)sender
 {
     NSArray *array = self.navigationController.viewControllers;
     if (array.count > 1 && [array indexOfObject:self] > 0) {
@@ -59,6 +60,11 @@
     {
         [self dismissViewControllerAnimated:YES completion:nil];
     }
+}
+
+- (void)rightBarButtonAction:(id)sender
+{
+    // 子类中重载
 }
 
 #pragma mark - super

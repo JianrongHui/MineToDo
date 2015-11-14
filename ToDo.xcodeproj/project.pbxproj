@@ -85,13 +85,18 @@
 		5B33066D1BE0ADA900BAF283 /* state_middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B33065E1BE0ADA900BAF283 /* state_middle@2x.png */; };
 		5B33066E1BE0ADA900BAF283 /* state_middle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B33065F1BE0ADA900BAF283 /* state_middle@3x.png */; };
 		DD1ED2CB1BDE7A1400953760 /* HJRBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2CA1BDE7A1400953760 /* HJRBaseController.m */; };
-		DD1ED2D41BDE7AFC00953760 /* HJRMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2D31BDE7AFC00953760 /* HJRMainController.m */; };
 		DD1ED2DC1BDE7B6C00953760 /* HJRGogingController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2DB1BDE7B6C00953760 /* HJRGogingController.m */; };
 		DD1ED2DF1BDE7B8100953760 /* HJRHaveDoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2DE1BDE7B8100953760 /* HJRHaveDoneController.m */; };
 		DD1ED2E21BDE7B9000953760 /* HJRSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2E11BDE7B9000953760 /* HJRSettingController.m */; };
 		DD1ED2FD1BDE8F2E00953760 /* testImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD1ED2FC1BDE8F2E00953760 /* testImage.jpg */; };
-		DD1ED3011BDE8F5000953760 /* HJRMainPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2FF1BDE8F5000953760 /* HJRMainPageCell.m */; };
-		DD1ED3021BDE8F5000953760 /* HJRMainPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1ED3001BDE8F5000953760 /* HJRMainPageCell.xib */; };
+		DD43E0B01BF6EE7700B9FC3F /* HJRMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD43E0AA1BF6EE7700B9FC3F /* HJRMainController.m */; };
+		DD43E0B11BF6EE7700B9FC3F /* HJRMainPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD43E0AC1BF6EE7700B9FC3F /* HJRMainPageCell.m */; };
+		DD43E0B21BF6EE7700B9FC3F /* HJRMainPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD43E0AD1BF6EE7700B9FC3F /* HJRMainPageCell.xib */; };
+		DD43E0B31BF6EE7700B9FC3F /* HJRMainPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD43E0AF1BF6EE7700B9FC3F /* HJRMainPageModel.m */; };
+		DD43E0B91BF6F02F00B9FC3F /* HJRDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD43E0B71BF6F02F00B9FC3F /* HJRDetailsController.m */; };
+		DD43E0BA1BF6F02F00B9FC3F /* HJRDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD43E0B81BF6F02F00B9FC3F /* HJRDetailsController.xib */; };
+		DD43E0BF1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD43E0BE1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m */; };
+		DD43E0C11BF6F37500B9FC3F /* HJRDetailsTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD43E0C01BF6F37500B9FC3F /* HJRDetailsTableHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,8 +205,6 @@
 		5B33065F1BE0ADA900BAF283 /* state_middle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "state_middle@3x.png"; sourceTree = "<group>"; };
 		DD1ED2C91BDE7A1400953760 /* HJRBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRBaseController.h; sourceTree = "<group>"; };
 		DD1ED2CA1BDE7A1400953760 /* HJRBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRBaseController.m; sourceTree = "<group>"; };
-		DD1ED2D21BDE7AFC00953760 /* HJRMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRMainController.h; sourceTree = "<group>"; };
-		DD1ED2D31BDE7AFC00953760 /* HJRMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRMainController.m; sourceTree = "<group>"; };
 		DD1ED2DA1BDE7B6C00953760 /* HJRGogingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRGogingController.h; sourceTree = "<group>"; };
 		DD1ED2DB1BDE7B6C00953760 /* HJRGogingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRGogingController.m; sourceTree = "<group>"; };
 		DD1ED2DD1BDE7B8100953760 /* HJRHaveDoneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRHaveDoneController.h; sourceTree = "<group>"; };
@@ -209,9 +212,19 @@
 		DD1ED2E01BDE7B9000953760 /* HJRSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRSettingController.h; sourceTree = "<group>"; };
 		DD1ED2E11BDE7B9000953760 /* HJRSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRSettingController.m; sourceTree = "<group>"; };
 		DD1ED2FC1BDE8F2E00953760 /* testImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImage.jpg; sourceTree = "<group>"; };
-		DD1ED2FE1BDE8F5000953760 /* HJRMainPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRMainPageCell.h; sourceTree = "<group>"; };
-		DD1ED2FF1BDE8F5000953760 /* HJRMainPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRMainPageCell.m; sourceTree = "<group>"; };
-		DD1ED3001BDE8F5000953760 /* HJRMainPageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJRMainPageCell.xib; sourceTree = "<group>"; };
+		DD43E0A91BF6EE7700B9FC3F /* HJRMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRMainController.h; sourceTree = "<group>"; };
+		DD43E0AA1BF6EE7700B9FC3F /* HJRMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRMainController.m; sourceTree = "<group>"; };
+		DD43E0AB1BF6EE7700B9FC3F /* HJRMainPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRMainPageCell.h; sourceTree = "<group>"; };
+		DD43E0AC1BF6EE7700B9FC3F /* HJRMainPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRMainPageCell.m; sourceTree = "<group>"; };
+		DD43E0AD1BF6EE7700B9FC3F /* HJRMainPageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJRMainPageCell.xib; sourceTree = "<group>"; };
+		DD43E0AE1BF6EE7700B9FC3F /* HJRMainPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRMainPageModel.h; sourceTree = "<group>"; };
+		DD43E0AF1BF6EE7700B9FC3F /* HJRMainPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRMainPageModel.m; sourceTree = "<group>"; };
+		DD43E0B61BF6F02F00B9FC3F /* HJRDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRDetailsController.h; sourceTree = "<group>"; };
+		DD43E0B71BF6F02F00B9FC3F /* HJRDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRDetailsController.m; sourceTree = "<group>"; };
+		DD43E0B81BF6F02F00B9FC3F /* HJRDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJRDetailsController.xib; sourceTree = "<group>"; };
+		DD43E0BD1BF6F2F000B9FC3F /* HJRDetailsTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRDetailsTableHeader.h; sourceTree = "<group>"; };
+		DD43E0BE1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRDetailsTableHeader.m; sourceTree = "<group>"; };
+		DD43E0C01BF6F37500B9FC3F /* HJRDetailsTableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJRDetailsTableHeader.xib; sourceTree = "<group>"; };
 		F70D8A397534A40AEB1EF7FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -305,11 +318,13 @@
 		5B05502D1BDE146900AD44EB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DD43E0A81BF6EE7700B9FC3F /* MainPageController */,
+				DD43E0A71BF6EDE100B9FC3F /* AddItemController */,
 				DD1ED2C81BDE79FE00953760 /* BaseViewController */,
-				DD1ED2D11BDE7AFC00953760 /* MainPage */,
 				DD1ED2CF1BDE7AEE00953760 /* GoingController */,
 				DD1ED2D91BDE7B4700953760 /* HaveDoneController */,
 				DD1ED2D01BDE7AF600953760 /* SettingController */,
+				DD43E0A61BF6ED1000B9FC3F /* DetailsViewController */,
 				5B05502E1BDE146900AD44EB /* AppDelegate.h */,
 				5B05502F1BDE146900AD44EB /* AppDelegate.m */,
 				5B0550341BDE173200AD44EB /* HJRTabBarController.h */,
@@ -409,16 +424,6 @@
 			path = SettingController;
 			sourceTree = "<group>";
 		};
-		DD1ED2D11BDE7AFC00953760 /* MainPage */ = {
-			isa = PBXGroup;
-			children = (
-				DD1ED2D21BDE7AFC00953760 /* HJRMainController.h */,
-				DD1ED2D31BDE7AFC00953760 /* HJRMainController.m */,
-				DD1ED3031BDE8F5800953760 /* Views */,
-			);
-			path = MainPage;
-			sourceTree = "<group>";
-		};
 		DD1ED2D91BDE7B4700953760 /* HaveDoneController */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,14 +503,70 @@
 			path = tabbar;
 			sourceTree = "<group>";
 		};
-		DD1ED3031BDE8F5800953760 /* Views */ = {
+		DD43E0A61BF6ED1000B9FC3F /* DetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DD1ED2FE1BDE8F5000953760 /* HJRMainPageCell.h */,
-				DD1ED2FF1BDE8F5000953760 /* HJRMainPageCell.m */,
-				DD1ED3001BDE8F5000953760 /* HJRMainPageCell.xib */,
+				DD43E0BC1BF6F2A400B9FC3F /* Model */,
+				DD43E0BB1BF6F29300B9FC3F /* Views */,
+				DD43E0B61BF6F02F00B9FC3F /* HJRDetailsController.h */,
+				DD43E0B71BF6F02F00B9FC3F /* HJRDetailsController.m */,
+				DD43E0B81BF6F02F00B9FC3F /* HJRDetailsController.xib */,
+			);
+			path = DetailsViewController;
+			sourceTree = "<group>";
+		};
+		DD43E0A71BF6EDE100B9FC3F /* AddItemController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddItemController;
+			sourceTree = "<group>";
+		};
+		DD43E0A81BF6EE7700B9FC3F /* MainPageController */ = {
+			isa = PBXGroup;
+			children = (
+				DD43E0A91BF6EE7700B9FC3F /* HJRMainController.h */,
+				DD43E0AA1BF6EE7700B9FC3F /* HJRMainController.m */,
+				DD43E0B51BF6EEBD00B9FC3F /* Views */,
+				DD43E0B41BF6EEA900B9FC3F /* Model */,
+			);
+			path = MainPageController;
+			sourceTree = "<group>";
+		};
+		DD43E0B41BF6EEA900B9FC3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD43E0AE1BF6EE7700B9FC3F /* HJRMainPageModel.h */,
+				DD43E0AF1BF6EE7700B9FC3F /* HJRMainPageModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DD43E0B51BF6EEBD00B9FC3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD43E0AB1BF6EE7700B9FC3F /* HJRMainPageCell.h */,
+				DD43E0AC1BF6EE7700B9FC3F /* HJRMainPageCell.m */,
+				DD43E0AD1BF6EE7700B9FC3F /* HJRMainPageCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		DD43E0BB1BF6F29300B9FC3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD43E0BD1BF6F2F000B9FC3F /* HJRDetailsTableHeader.h */,
+				DD43E0BE1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m */,
+				DD43E0C01BF6F37500B9FC3F /* HJRDetailsTableHeader.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DD43E0BC1BF6F2A400B9FC3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		F64438AB1171A16E6C78BFF4 /* Frameworks */ = {
@@ -631,7 +692,6 @@
 				5B3306191BE0AD5300BAF283 /* tabbar_all_selected.png in Resources */,
 				5B3306451BE0AD6900BAF283 /* setting_clear@2x.png in Resources */,
 				5B3305EB1BE0ACDC00BAF283 /* button_add.png in Resources */,
-				DD1ED3021BDE8F5000953760 /* HJRMainPageCell.xib in Resources */,
 				5B3305F01BE0ACDC00BAF283 /* button_save@3x.png in Resources */,
 				5B3306161BE0AD5300BAF283 /* tabbar_all_nor.png in Resources */,
 				5B3306491BE0AD6900BAF283 /* setting_clock@3x.png in Resources */,
@@ -673,9 +733,11 @@
 				5B3306271BE0AD5300BAF283 /* tabbar_haveDone_nor@3x.png in Resources */,
 				5B3306641BE0ADA900BAF283 /* state_haveDone@2x.png in Resources */,
 				5B33062D1BE0AD5300BAF283 /* tabbar_setting_nor@3x.png in Resources */,
+				DD43E0C11BF6F37500B9FC3F /* HJRDetailsTableHeader.xib in Resources */,
 				5B3306631BE0ADA900BAF283 /* state_haveDone.png in Resources */,
 				5B3305EF1BE0ACDC00BAF283 /* button_save@2x.png in Resources */,
 				5B3306471BE0AD6900BAF283 /* setting_clock.png in Resources */,
+				DD43E0B21BF6EE7700B9FC3F /* HJRMainPageCell.xib in Resources */,
 				5B3306661BE0ADA900BAF283 /* state_high.png in Resources */,
 				5B3306211BE0AD5300BAF283 /* tabbar_going_nor@3x.png in Resources */,
 				5B33066D1BE0ADA900BAF283 /* state_middle@2x.png in Resources */,
@@ -683,6 +745,7 @@
 				5B3305EC1BE0ACDC00BAF283 /* button_add@2x.png in Resources */,
 				5B3306621BE0ADA900BAF283 /* state_emergency@3x.png in Resources */,
 				5B3306441BE0AD6900BAF283 /* setting_clear.png in Resources */,
+				DD43E0BA1BF6F02F00B9FC3F /* HJRDetailsController.xib in Resources */,
 				5B3305EE1BE0ACDC00BAF283 /* button_save.png in Resources */,
 				5B3306411BE0AD6900BAF283 /* setting_about.png in Resources */,
 				5B33064F1BE0AD6900BAF283 /* setting_skin@3x.png in Resources */,
@@ -768,13 +831,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0550301BDE146900AD44EB /* AppDelegate.m in Sources */,
-				DD1ED2D41BDE7AFC00953760 /* HJRMainController.m in Sources */,
-				DD1ED3011BDE8F5000953760 /* HJRMainPageCell.m in Sources */,
+				DD43E0B11BF6EE7700B9FC3F /* HJRMainPageCell.m in Sources */,
+				DD43E0B91BF6F02F00B9FC3F /* HJRDetailsController.m in Sources */,
 				DD1ED2CB1BDE7A1400953760 /* HJRBaseController.m in Sources */,
 				DD1ED2DC1BDE7B6C00953760 /* HJRGogingController.m in Sources */,
 				5B0550361BDE173200AD44EB /* HJRTabBarController.m in Sources */,
+				DD43E0B01BF6EE7700B9FC3F /* HJRMainController.m in Sources */,
 				DD1ED2DF1BDE7B8100953760 /* HJRHaveDoneController.m in Sources */,
 				5B054FFB1BDE0A9B00AD44EB /* main.m in Sources */,
+				DD43E0BF1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m in Sources */,
+				DD43E0B31BF6EE7700B9FC3F /* HJRMainPageModel.m in Sources */,
 				DD1ED2E21BDE7B9000953760 /* HJRSettingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HJRDetailsTableHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCx-mo-g3z">
+                    <rect key="frame" x="5" y="5" width="310" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="state_emergency.png" translatesAutoresizingMaskIntoConstraints="NO" id="wKh-7S-hUk">
+                            <rect key="frame" x="8" y="8" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="jGQ-uJ-IFC"/>
+                                <constraint firstAttribute="width" constant="22" id="rds-Za-BRv"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60o-ir-tTP" userLabel="lineView">
+                            <rect key="frame" x="38" y="11" width="2" height="15"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="UGf-mv-1kj"/>
+                                <constraint firstAttribute="width" constant="2" id="xew-gx-Yff"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期五晚上看电影" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufB-Hq-FwY">
+                            <rect key="frame" x="48" y="9" width="120" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="2015-11-06  23:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7l-OB-Why">
+                            <rect key="frame" x="48" y="29" width="106" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="珠海  华发新城" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5V-tH-aNH">
+                            <rect key="frame" x="162" y="29" width="143" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.56454785919999995" green="1" blue="0.32563388980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="wKh-7S-hUk" firstAttribute="top" secondItem="dCx-mo-g3z" secondAttribute="top" constant="8" id="3Aq-yx-6uP"/>
+                        <constraint firstItem="p7l-OB-Why" firstAttribute="top" secondItem="ufB-Hq-FwY" secondAttribute="bottom" constant="8" id="4bw-8C-1p0"/>
+                        <constraint firstItem="ufB-Hq-FwY" firstAttribute="centerY" secondItem="60o-ir-tTP" secondAttribute="centerY" id="7OF-oI-kDR"/>
+                        <constraint firstItem="wKh-7S-hUk" firstAttribute="leading" secondItem="dCx-mo-g3z" secondAttribute="leading" constant="8" id="D8R-Qx-nfJ"/>
+                        <constraint firstItem="p7l-OB-Why" firstAttribute="leading" secondItem="ufB-Hq-FwY" secondAttribute="leading" id="LOu-h5-MBX"/>
+                        <constraint firstItem="r5V-tH-aNH" firstAttribute="centerY" secondItem="p7l-OB-Why" secondAttribute="centerY" id="Lvl-dX-Iao"/>
+                        <constraint firstAttribute="bottom" secondItem="p7l-OB-Why" secondAttribute="bottom" constant="6" id="Xec-Z2-uET"/>
+                        <constraint firstAttribute="height" constant="50" id="hc4-R7-Qcw"/>
+                        <constraint firstItem="60o-ir-tTP" firstAttribute="centerY" secondItem="wKh-7S-hUk" secondAttribute="centerY" id="i1a-Y4-Zsd"/>
+                        <constraint firstItem="60o-ir-tTP" firstAttribute="leading" secondItem="wKh-7S-hUk" secondAttribute="trailing" constant="8" id="n9C-ri-dPJ"/>
+                        <constraint firstItem="ufB-Hq-FwY" firstAttribute="leading" secondItem="60o-ir-tTP" secondAttribute="trailing" constant="8" id="pos-Ri-bym"/>
+                        <constraint firstAttribute="trailing" secondItem="r5V-tH-aNH" secondAttribute="trailing" constant="5" id="qa4-09-N9y"/>
+                        <constraint firstAttribute="bottom" secondItem="p7l-OB-Why" secondAttribute="bottom" constant="8" id="te7-WX-K9z"/>
+                        <constraint firstItem="r5V-tH-aNH" firstAttribute="leading" secondItem="p7l-OB-Why" secondAttribute="trailing" constant="8" id="wAW-n4-JkV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4bw-8C-1p0"/>
+                            <exclude reference="te7-WX-K9z"/>
+                        </mask>
+                    </variation>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-SP-qzV">
+                    <rect key="frame" x="5" y="55" width="310" height="142"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bUd-SP-qzV" firstAttribute="top" secondItem="dCx-mo-g3z" secondAttribute="bottom" id="Er6-Nl-4LB"/>
+                <constraint firstAttribute="trailing" secondItem="bUd-SP-qzV" secondAttribute="trailing" constant="5" id="F8b-B7-BM7"/>
+                <constraint firstItem="bUd-SP-qzV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="fou-Pz-TNK"/>
+                <constraint firstItem="dCx-mo-g3z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="rfW-vv-L1h"/>
+                <constraint firstItem="dCx-mo-g3z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="spe-hN-3UP"/>
+                <constraint firstAttribute="trailing" secondItem="dCx-mo-g3z" secondAttribute="trailing" constant="5" id="uvP-2G-Xfb"/>
+                <constraint firstAttribute="bottom" secondItem="bUd-SP-qzV" secondAttribute="bottom" constant="8" id="zrD-vc-phe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="146" y="-101.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="state_emergency.png" width="22" height="22"/>
+    </resources>
+</document>
