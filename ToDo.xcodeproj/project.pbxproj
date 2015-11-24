@@ -84,6 +84,7 @@
 		5B33066C1BE0ADA900BAF283 /* state_middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B33065D1BE0ADA900BAF283 /* state_middle.png */; };
 		5B33066D1BE0ADA900BAF283 /* state_middle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B33065E1BE0ADA900BAF283 /* state_middle@2x.png */; };
 		5B33066E1BE0ADA900BAF283 /* state_middle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B33065F1BE0ADA900BAF283 /* state_middle@3x.png */; };
+		5B4A54B41C03E17000F61737 /* UI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B4A54B31C03E17000F61737 /* UI.jpg */; };
 		DD1ED2CB1BDE7A1400953760 /* HJRBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2CA1BDE7A1400953760 /* HJRBaseController.m */; };
 		DD1ED2DC1BDE7B6C00953760 /* HJRGogingController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2DB1BDE7B6C00953760 /* HJRGogingController.m */; };
 		DD1ED2DF1BDE7B8100953760 /* HJRHaveDoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1ED2DE1BDE7B8100953760 /* HJRHaveDoneController.m */; };
@@ -203,6 +204,7 @@
 		5B33065D1BE0ADA900BAF283 /* state_middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_middle.png; sourceTree = "<group>"; };
 		5B33065E1BE0ADA900BAF283 /* state_middle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "state_middle@2x.png"; sourceTree = "<group>"; };
 		5B33065F1BE0ADA900BAF283 /* state_middle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "state_middle@3x.png"; sourceTree = "<group>"; };
+		5B4A54B31C03E17000F61737 /* UI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UI.jpg; sourceTree = "<group>"; };
 		DD1ED2C91BDE7A1400953760 /* HJRBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRBaseController.h; sourceTree = "<group>"; };
 		DD1ED2CA1BDE7A1400953760 /* HJRBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRBaseController.m; sourceTree = "<group>"; };
 		DD1ED2DA1BDE7B6C00953760 /* HJRGogingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRGogingController.h; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				DD1ED2E31BDE88A200953760 /* Resources */,
+				5B4A54B31C03E17000F61737 /* UI.jpg */,
 				5B0550071BDE0A9B00AD44EB /* LaunchScreen.storyboard */,
 				5B05500A1BDE0A9B00AD44EB /* Info.plist */,
 				5B054FFA1BDE0A9B00AD44EB /* main.m */,
@@ -746,6 +749,7 @@
 				5B3306621BE0ADA900BAF283 /* state_emergency@3x.png in Resources */,
 				5B3306441BE0AD6900BAF283 /* setting_clear.png in Resources */,
 				DD43E0BA1BF6F02F00B9FC3F /* HJRDetailsController.xib in Resources */,
+				5B4A54B41C03E17000F61737 /* UI.jpg in Resources */,
 				5B3305EE1BE0ACDC00BAF283 /* button_save.png in Resources */,
 				5B3306411BE0AD6900BAF283 /* setting_about.png in Resources */,
 				5B33064F1BE0AD6900BAF283 /* setting_skin@3x.png in Resources */,
