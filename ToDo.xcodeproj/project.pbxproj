@@ -98,6 +98,8 @@
 		DD43E0BA1BF6F02F00B9FC3F /* HJRDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD43E0B81BF6F02F00B9FC3F /* HJRDetailsController.xib */; };
 		DD43E0BF1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD43E0BE1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m */; };
 		DD43E0C11BF6F37500B9FC3F /* HJRDetailsTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD43E0C01BF6F37500B9FC3F /* HJRDetailsTableHeader.xib */; };
+		DDC5D26C1C04886A001666CC /* HJRAddItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC5D26A1C04886A001666CC /* HJRAddItemController.m */; };
+		DDC5D26D1C04886A001666CC /* HJRAddItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC5D26B1C04886A001666CC /* HJRAddItemController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +229,10 @@
 		DD43E0BD1BF6F2F000B9FC3F /* HJRDetailsTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRDetailsTableHeader.h; sourceTree = "<group>"; };
 		DD43E0BE1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRDetailsTableHeader.m; sourceTree = "<group>"; };
 		DD43E0C01BF6F37500B9FC3F /* HJRDetailsTableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJRDetailsTableHeader.xib; sourceTree = "<group>"; };
+		DDC5D2691C04886A001666CC /* HJRAddItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRAddItemController.h; sourceTree = "<group>"; };
+		DDC5D26A1C04886A001666CC /* HJRAddItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRAddItemController.m; sourceTree = "<group>"; };
+		DDC5D26B1C04886A001666CC /* HJRAddItemController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJRAddItemController.xib; sourceTree = "<group>"; };
+		DDC5D2701C049DB4001666CC /* HJRMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJRMacro.h; sourceTree = "<group>"; };
 		F70D8A397534A40AEB1EF7FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,6 +287,7 @@
 		5B054FF81BDE0A9B00AD44EB /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				DDC5D26F1C049D7E001666CC /* Common */,
 				5B05502D1BDE146900AD44EB /* Classes */,
 				5B054FF91BDE0A9B00AD44EB /* Supporting Files */,
 				5B0550051BDE0A9B00AD44EB /* Assets.xcassets */,
@@ -521,6 +528,10 @@
 		DD43E0A71BF6EDE100B9FC3F /* AddItemController */ = {
 			isa = PBXGroup;
 			children = (
+				DDC5D2691C04886A001666CC /* HJRAddItemController.h */,
+				DDC5D26A1C04886A001666CC /* HJRAddItemController.m */,
+				DDC5D26B1C04886A001666CC /* HJRAddItemController.xib */,
+				DDC5D26E1C048EC8001666CC /* Views */,
 			);
 			path = AddItemController;
 			sourceTree = "<group>";
@@ -570,6 +581,21 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		DDC5D26E1C048EC8001666CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DDC5D26F1C049D7E001666CC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DDC5D2701C049DB4001666CC /* HJRMacro.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		F64438AB1171A16E6C78BFF4 /* Frameworks */ = {
@@ -704,6 +730,7 @@
 				5B3306431BE0AD6900BAF283 /* setting_about@3x.png in Resources */,
 				5B3305FA1BE0AD0C00BAF283 /* nav_back@3x.png in Resources */,
 				5B33062A1BE0AD5300BAF283 /* tabbar_haveDone_selected@3x.png in Resources */,
+				DDC5D26D1C04886A001666CC /* HJRAddItemController.xib in Resources */,
 				5B33066A1BE0ADA900BAF283 /* state_low@2x.png in Resources */,
 				5B33066B1BE0ADA900BAF283 /* state_low@3x.png in Resources */,
 				5B3305ED1BE0ACDC00BAF283 /* button_add@3x.png in Resources */,
@@ -835,6 +862,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0550301BDE146900AD44EB /* AppDelegate.m in Sources */,
+				DDC5D26C1C04886A001666CC /* HJRAddItemController.m in Sources */,
 				DD43E0B11BF6EE7700B9FC3F /* HJRMainPageCell.m in Sources */,
 				DD43E0B91BF6F02F00B9FC3F /* HJRDetailsController.m in Sources */,
 				DD1ED2CB1BDE7A1400953760 /* HJRBaseController.m in Sources */,

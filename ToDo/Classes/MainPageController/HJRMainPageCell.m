@@ -13,6 +13,9 @@
 - (void)awakeFromNib {
     // Initialization code
 //    self.backgroundColor
+//    self.clipsToBounds = YES;
+//    self.layer.masksToBounds = YES;
+//    self.layer.cornerRadius = 8;
 }
 
 

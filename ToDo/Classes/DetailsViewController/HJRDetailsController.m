@@ -43,6 +43,7 @@ static NSString *kDetailsCellId = @"DetailsCellId";
     _contentTableView.dataSource = self;
     _contentTableView.rowHeight = 44;
     _contentTableView.sectionHeaderHeight = 205;
+    _contentTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [_contentTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kDetailsCellId];
 }
 

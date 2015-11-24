@@ -10,6 +10,7 @@
 #import "HJRMainPageCell.h"
 #import "HJRGogingController.h"
 #import "HJRDetailsController.h"
+#import "HJRAddItemController.h"
 
 static NSString *const mainPageCellId = @"mainPageCellId";
 
@@ -38,6 +39,7 @@ static NSString *const mainPageCellId = @"mainPageCellId";
     
     self.title = @"全部";
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setupRightBarButtonItemWithTitle:@"添加" imageName:nil];
     [self setupContentTableView];
     
 }
@@ -54,9 +56,9 @@ static NSString *const mainPageCellId = @"mainPageCellId";
     // 计算cell高度
     CGFloat iphoneW = [UIScreen mainScreen].bounds.size.width;
     CGFloat cellH = iphoneW*3/5.0 + 10;
-    
     _contentTableView = [[UITableView alloc] init];
     _contentTableView.frame = self.view.bounds;
+    _contentTableView.contentInset = UIEdgeInsetsMake(0, 0, 48, 0);
     _contentTableView.delegate  = self;
     _contentTableView.dataSource = self;
     _contentTableView.rowHeight = cellH;
@@ -68,13 +70,15 @@ static NSString *const mainPageCellId = @"mainPageCellId";
 #pragma mark - 点击事件
 - (void)rightBarButtonAction:(id)sender
 {
-    
+    HJRAddItemController *vc = [[HJRAddItemController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UITableViewDataSource | UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 2;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

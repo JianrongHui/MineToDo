@@ -19,8 +19,6 @@
     [super viewDidLoad];
     
     [self setupLeftBarButtonItem];
-    [self setupRightBarButtonItem];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +27,7 @@
 }
 
 #pragma mark -  UI
-- (void)setupLeftBarButtonItem{
+- (void)setupLeftBarButtonItem {
     if (self.navigationController.viewControllers.count > 1) {
         UIButton *leftBtn = [UIButton buttonWithType:0];
         [leftBtn setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
@@ -40,11 +38,11 @@
     }
 }
 
-- (void)setupRightBarButtonItem{
+- (void)setupRightBarButtonItemWithTitle:(NSString *)title imageName:(NSString *)imageName {
     UIButton *rightBtn = [UIButton buttonWithType:0];
-    [rightBtn setTitle:@"添加" forState:UIControlStateNormal];
+    [rightBtn setTitle:title forState:UIControlStateNormal];
     [rightBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-//    rightBtn.backgroundColor = [UIColor greenColor];
+    [rightBtn addTarget:self action:@selector(rightBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     rightBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -20);
     rightBtn.frame = CGRectMake(0, 0, 40, 64);
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];

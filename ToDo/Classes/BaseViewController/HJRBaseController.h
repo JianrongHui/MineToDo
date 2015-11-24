@@ -12,5 +12,6 @@
 
 - (void)backAction:(id)sender;
 - (void)rightBarButtonAction:(id)sender;
+- (void)setupRightBarButtonItemWithTitle:(NSString *)title imageName:(NSString *)imageName;
 
 @end
