@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HJRInputCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MT-Vk-4vl">
+                        <rect key="frame" x="15" y="0.0" width="35" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="今晚去看电影" placeholder="待办事项简述" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5t-Km-BST">
+                        <rect key="frame" x="58" y="8" width="247" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="e5t-Km-BST" secondAttribute="bottom" constant="8" id="0n8-0m-T33"/>
+                    <constraint firstItem="9MT-Vk-4vl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="9dF-ee-xsn"/>
+                    <constraint firstItem="9MT-Vk-4vl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QTh-Sp-B0Q"/>
+                    <constraint firstAttribute="trailing" secondItem="e5t-Km-BST" secondAttribute="trailing" constant="15" id="Y1Z-vN-yzS"/>
+                    <constraint firstAttribute="bottom" secondItem="9MT-Vk-4vl" secondAttribute="bottom" id="dY2-ny-YpM"/>
+                    <constraint firstItem="e5t-Km-BST" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eze-QW-skB"/>
+                    <constraint firstItem="e5t-Km-BST" firstAttribute="leading" secondItem="9MT-Vk-4vl" secondAttribute="trailing" constant="8" id="x6y-9I-JKk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellTileLabel" destination="9MT-Vk-4vl" id="HNh-fP-STn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

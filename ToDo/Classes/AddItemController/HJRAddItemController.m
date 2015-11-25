@@ -7,6 +7,8 @@
 //
 
 #import "HJRAddItemController.h"
+#import "HJRImageLabelCell.h"
+#import "HJRInputCell.h"
 
 @interface HJRAddItemController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -33,6 +35,7 @@
     _contentTableView.backgroundColor = [UIColor lightGrayColor];
     _contentTableView.sectionHeaderHeight = 20.0f;
     _contentTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    _contentTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
 }
 
 #pragma mark - UITableViewDataSource | UITableViewDelegate
@@ -51,14 +54,52 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellId = @"cellId";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-        cell.backgroundColor = [UIColor whiteColor];
+    NSString *cellId = [NSString stringWithFormat:@"cellId%zi_%zi",indexPath.section,indexPath.row];
+    switch (indexPath.section) {
+        case 0:
+        {
+            HJRImageLabelCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+            if (!cell) {
+                cell = [[HJRImageLabelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }
+            cell.cellTitle = @"上传照片";
+            cell.cellImageName = @"button_update";
+            return cell;
+         }
+        case 1:
+        {
+            HJRInputCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+            if (!cell) {
+                cell = [[HJRInputCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }
+            cell.cellTitle = @"名称";
+            return cell;
+        }
+        case 2:
+        {
+            HJRInputCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+            if (!cell) {
+                cell = [[HJRInputCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }
+            cell.cellTitle = @"名称";
+            return cell;
+        }
+        case 3:
+        {
+            HJRImageLabelCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+            if (!cell) {
+                cell = [[HJRImageLabelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+            }
+            cell.cellTitle = @"上传照片";
+            cell.cellImageName = @"button_update";
+            return cell;
+        }
+        default:
+        {
+            return nil;
+        }
     }
-    return cell;
+    return nil;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

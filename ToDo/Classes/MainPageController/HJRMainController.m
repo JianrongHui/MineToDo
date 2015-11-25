@@ -36,26 +36,18 @@ static NSString *const mainPageCellId = @"mainPageCellId";
         [_dataArray addObject:@""];
     }
     
-    
     self.title = @"全部";
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setupRightBarButtonItemWithTitle:@"添加" imageName:nil];
+    [self setupRightBarButtonItemWithTitle:nil imageName:@"button_add@3x.png"];
     [self setupContentTableView];
-    
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 #pragma mark - UI
-
 - (void)setupContentTableView
 {
     // 计算cell高度
     CGFloat iphoneW = [UIScreen mainScreen].bounds.size.width;
-    CGFloat cellH = iphoneW*3/5.0 + 10;
+    CGFloat cellH = (iphoneW - 10)*3/5.0 + 10;
     _contentTableView = [[UITableView alloc] init];
     _contentTableView.frame = self.view.bounds;
     _contentTableView.contentInset = UIEdgeInsetsMake(0, 0, 48, 0);

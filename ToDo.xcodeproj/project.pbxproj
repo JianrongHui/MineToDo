@@ -15,6 +15,10 @@
 		5B05501F1BDE0A9B00AD44EB /* ToDoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B05501E1BDE0A9B00AD44EB /* ToDoUITests.m */; };
 		5B0550301BDE146900AD44EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B05502F1BDE146900AD44EB /* AppDelegate.m */; };
 		5B0550361BDE173200AD44EB /* HJRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0550351BDE173200AD44EB /* HJRTabBarController.m */; };
+		5B0D595A1C05B40B006FE6C2 /* HJRImageLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D59581C05B40B006FE6C2 /* HJRImageLabelCell.m */; };
+		5B0D595B1C05B40B006FE6C2 /* HJRImageLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D59591C05B40B006FE6C2 /* HJRImageLabelCell.xib */; };
+		5B0D595F1C05B96E006FE6C2 /* HJRInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D595D1C05B96E006FE6C2 /* HJRInputCell.m */; };
+		5B0D59601C05B96E006FE6C2 /* HJRInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D595E1C05B96E006FE6C2 /* HJRInputCell.xib */; };
 		5B3305EB1BE0ACDC00BAF283 /* button_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B3305E21BE0ACDC00BAF283 /* button_add.png */; };
 		5B3305EC1BE0ACDC00BAF283 /* button_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B3305E31BE0ACDC00BAF283 /* button_add@2x.png */; };
 		5B3305ED1BE0ACDC00BAF283 /* button_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B3305E41BE0ACDC00BAF283 /* button_add@3x.png */; };
@@ -137,6 +141,12 @@
 		5B05502F1BDE146900AD44EB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5B0550341BDE173200AD44EB /* HJRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRTabBarController.h; sourceTree = "<group>"; };
 		5B0550351BDE173200AD44EB /* HJRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRTabBarController.m; sourceTree = "<group>"; };
+		5B0D59571C05B40B006FE6C2 /* HJRImageLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRImageLabelCell.h; sourceTree = "<group>"; };
+		5B0D59581C05B40B006FE6C2 /* HJRImageLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRImageLabelCell.m; sourceTree = "<group>"; };
+		5B0D59591C05B40B006FE6C2 /* HJRImageLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJRImageLabelCell.xib; sourceTree = "<group>"; };
+		5B0D595C1C05B96E006FE6C2 /* HJRInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRInputCell.h; sourceTree = "<group>"; };
+		5B0D595D1C05B96E006FE6C2 /* HJRInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRInputCell.m; sourceTree = "<group>"; };
+		5B0D595E1C05B96E006FE6C2 /* HJRInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJRInputCell.xib; sourceTree = "<group>"; };
 		5B3305E21BE0ACDC00BAF283 /* button_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_add.png; sourceTree = "<group>"; };
 		5B3305E31BE0ACDC00BAF283 /* button_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_add@2x.png"; sourceTree = "<group>"; };
 		5B3305E41BE0ACDC00BAF283 /* button_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_add@3x.png"; sourceTree = "<group>"; };
@@ -586,6 +596,12 @@
 		DDC5D26E1C048EC8001666CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B0D59571C05B40B006FE6C2 /* HJRImageLabelCell.h */,
+				5B0D59581C05B40B006FE6C2 /* HJRImageLabelCell.m */,
+				5B0D59591C05B40B006FE6C2 /* HJRImageLabelCell.xib */,
+				5B0D595C1C05B96E006FE6C2 /* HJRInputCell.h */,
+				5B0D595D1C05B96E006FE6C2 /* HJRInputCell.m */,
+				5B0D595E1C05B96E006FE6C2 /* HJRInputCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -735,6 +751,7 @@
 				5B33066B1BE0ADA900BAF283 /* state_low@3x.png in Resources */,
 				5B3305ED1BE0ACDC00BAF283 /* button_add@3x.png in Resources */,
 				5B3306601BE0ADA900BAF283 /* state_emergency.png in Resources */,
+				5B0D595B1C05B40B006FE6C2 /* HJRImageLabelCell.xib in Resources */,
 				5B3306261BE0AD5300BAF283 /* tabbar_haveDone_nor@2x.png in Resources */,
 				5B3306691BE0ADA900BAF283 /* state_low.png in Resources */,
 				5B0550091BDE0A9B00AD44EB /* LaunchScreen.storyboard in Resources */,
@@ -768,6 +785,7 @@
 				5B3305EF1BE0ACDC00BAF283 /* button_save@2x.png in Resources */,
 				5B3306471BE0AD6900BAF283 /* setting_clock.png in Resources */,
 				DD43E0B21BF6EE7700B9FC3F /* HJRMainPageCell.xib in Resources */,
+				5B0D59601C05B96E006FE6C2 /* HJRInputCell.xib in Resources */,
 				5B3306661BE0ADA900BAF283 /* state_high.png in Resources */,
 				5B3306211BE0AD5300BAF283 /* tabbar_going_nor@3x.png in Resources */,
 				5B33066D1BE0ADA900BAF283 /* state_middle@2x.png in Resources */,
@@ -862,6 +880,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0550301BDE146900AD44EB /* AppDelegate.m in Sources */,
+				5B0D595A1C05B40B006FE6C2 /* HJRImageLabelCell.m in Sources */,
 				DDC5D26C1C04886A001666CC /* HJRAddItemController.m in Sources */,
 				DD43E0B11BF6EE7700B9FC3F /* HJRMainPageCell.m in Sources */,
 				DD43E0B91BF6F02F00B9FC3F /* HJRDetailsController.m in Sources */,
@@ -871,6 +890,7 @@
 				DD43E0B01BF6EE7700B9FC3F /* HJRMainController.m in Sources */,
 				DD1ED2DF1BDE7B8100953760 /* HJRHaveDoneController.m in Sources */,
 				5B054FFB1BDE0A9B00AD44EB /* main.m in Sources */,
+				5B0D595F1C05B96E006FE6C2 /* HJRInputCell.m in Sources */,
 				DD43E0BF1BF6F2F000B9FC3F /* HJRDetailsTableHeader.m in Sources */,
 				DD43E0B31BF6EE7700B9FC3F /* HJRMainPageModel.m in Sources */,
 				DD1ED2E21BDE7B9000953760 /* HJRSettingController.m in Sources */,
@@ -1005,10 +1025,12 @@
 			baseConfigurationReference = F70D8A397534A40AEB1EF7FF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Weizhe Yuan (D5U834H45C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Weizhe Yuan (D5U834H45C)";
 				INFOPLIST_FILE = ToDo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.nxone.ToDo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcdhqy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1018,10 +1040,12 @@
 			baseConfigurationReference = 4DD4BCF5D7EC4214751ACB2A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Weizhe Yuan (D5U834H45C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Weizhe Yuan (D5U834H45C)";
 				INFOPLIST_FILE = ToDo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.nxone.ToDo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcdhqy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
