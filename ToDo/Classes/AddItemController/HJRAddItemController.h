@@ -8,6 +8,9 @@
 
 #import "HJRBaseController.h"
 
+@class HJRDetailDTO;
 @interface HJRAddItemController : HJRBaseController
+
+@property (nonatomic, copy) void (^returnBlock)(HJRDetailDTO *dto);
 
 @end

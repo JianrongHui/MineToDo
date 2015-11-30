@@ -11,5 +11,6 @@
 @interface HJRInputCell : UITableViewCell
 
 @property (nonatomic, copy) NSString *cellTitle;
+@property (weak, nonatomic) IBOutlet UITextField *inputTextView;
 
 @end

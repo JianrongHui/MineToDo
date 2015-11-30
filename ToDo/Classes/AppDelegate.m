@@ -23,9 +23,7 @@
     HJRTabBarController *tabBar = [[HJRTabBarController alloc] init];
     self.window.rootViewController = tabBar;
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    
-    
+    [self.window makeKeyAndVisible];    
     
     return YES;
 }

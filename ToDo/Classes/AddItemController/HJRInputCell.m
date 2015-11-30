@@ -34,4 +34,9 @@
     _cellTileLabel.text = cellTitle;
 }
 
+- (void)setPlaceHolder:(NSString *)placeHolder
+{
+    
+}
+
 @end

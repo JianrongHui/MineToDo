@@ -41,8 +41,8 @@
 - (void)setupRightBarButtonItemWithTitle:(NSString *)title imageName:(NSString *)imageName {
     UIButton *rightBtn = [UIButton buttonWithType:0];
     [rightBtn setTitle:title forState:UIControlStateNormal];
+    rightBtn.titleLabel.font = [UIFont systemFontOfSize:16.0f];
     [rightBtn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-//    [rightBtn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
     [rightBtn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [rightBtn addTarget:self action:@selector(rightBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];

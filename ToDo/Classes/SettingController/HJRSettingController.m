@@ -41,7 +41,7 @@
     _contentTableView = [[UITableView alloc] initWithFrame:size style:UITableViewStylePlain];
     _contentTableView.delegate = self;
     _contentTableView.dataSource = self;
-    _contentTableView.backgroundColor = [UIColor lightGrayColor];
+    _contentTableView.backgroundColor = KBACKGROUNDCOLOR;
     _contentTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     _contentTableView.sectionHeaderHeight = 15.0f;
     _contentTableView.rowHeight = 44.0f;
@@ -84,7 +84,24 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *header = [UIView new];
     header.frame = CGRectMake(0, 0, self.view.frame.size.width, 20);
-    header.backgroundColor = [UIColor lightGrayColor];
+    header.backgroundColor = KBACKGROUNDCOLOR;
     return header;
 }
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)])
+    {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)])
+    {
+        [cell setPreservesSuperviewLayoutMargins:NO];
+    }
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)])
+    {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
+
 @end

@@ -17,10 +17,10 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fro-gV-CTf">
                         <rect key="frame" x="103" y="0.0" width="114" height="43"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_update.png" translatesAutoresizingMaskIntoConstraints="NO" id="xX9-MT-WV8">
-                                <rect key="frame" x="25" y="15" width="9" height="13"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_update.png" translatesAutoresizingMaskIntoConstraints="NO" id="xX9-MT-WV8">
+                                <rect key="frame" x="25" y="15" width="13" height="13"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="9" id="LYu-4f-G5L"/>
+                                    <constraint firstAttribute="width" constant="13" id="LYu-4f-G5L"/>
                                     <constraint firstAttribute="height" constant="13" id="z1b-Vn-gEX"/>
                                 </constraints>
                             </imageView>

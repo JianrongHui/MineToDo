@@ -54,6 +54,7 @@ static NSString *const mainPageCellId = @"mainPageCellId";
     _contentTableView.delegate  = self;
     _contentTableView.dataSource = self;
     _contentTableView.rowHeight = cellH;
+    _contentTableView.backgroundColor = KBACKGROUNDCOLOR;
     _contentTableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
     [_contentTableView registerClass:[HJRMainPageCell class] forCellReuseIdentifier:mainPageCellId];
     [self.view addSubview:_contentTableView];
@@ -75,6 +76,7 @@ static NSString *const mainPageCellId = @"mainPageCellId";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HJRMainPageCell *cell = [tableView dequeueReusableCellWithIdentifier:mainPageCellId];
+    cell.backgroundColor = KBACKGROUNDCOLOR;
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -82,7 +84,7 @@ static NSString *const mainPageCellId = @"mainPageCellId";
     HJRDetailsController *vc = [[HJRDetailsController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
 
-        [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

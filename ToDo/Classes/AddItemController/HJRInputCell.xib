@@ -16,11 +16,14 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MT-Vk-4vl">
                         <rect key="frame" x="15" y="0.0" width="35" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="5Qb-x9-GVL"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="今晚去看电影" placeholder="待办事项简述" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5t-Km-BST">
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="待办事项简述" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5t-Km-BST">
                         <rect key="frame" x="58" y="8" width="247" height="27"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
@@ -38,6 +41,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellTileLabel" destination="9MT-Vk-4vl" id="HNh-fP-STn"/>
+                <outlet property="inputTextView" destination="e5t-Km-BST" id="U5w-yn-DoX"/>
             </connections>
         </tableViewCell>
     </objects>
